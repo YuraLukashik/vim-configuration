@@ -53,4 +53,6 @@ set clipboard=unnamedplus
 syntax on
 colorscheme vividchalk
 
+set number
+
 call plug#end()
