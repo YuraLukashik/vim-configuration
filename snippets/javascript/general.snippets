@@ -1,0 +1,40 @@
+snippet func
+	function ${1}(${2}){
+		${4:functionDefinition}
+	}${3:;}
+snippet iife
+	(function ${1}(${2}){
+		${4}
+	}(${3:}));
+# JSON.parse
+snippet jsonp
+	JSON.parse(${0:jstr});
+# JSON.stringify
+snippet jsons
+	JSON.stringify(${0:object});
+# Debugging
+
+# console.log
+snippet cl
+	console.log(${0});
+# console.debug
+snippet cd
+	console.debug(${0});
+# console.trace
+snippet ct
+	console.trace(${0:label});
+# console.time
+snippet ctime
+	console.time(${0:label});
+# console.assert
+snippet ca
+	console.assert(${1:expression}, ${0:obj});
+# console.dir
+snippet cdir
+	console.dir(${0:obj});
+
+# Misc
+
+# setTimeout function
+snippet timeout
+	setTimeout(function () {${0}}${2}, ${1:10});
