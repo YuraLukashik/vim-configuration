@@ -45,13 +45,15 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'Bling/vim-airline'
 
+Plug 'jonathanfilip/vim-lucius'
+
 " hotkeys
 map <C-n> :NERDTreeToggle<CR>
 
 set clipboard=unnamedplus
 
 syntax on
-colorscheme vividchalk
+colorscheme lucius
 
 set number
 
