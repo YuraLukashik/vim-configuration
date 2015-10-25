@@ -1,7 +1,7 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.nvim/plugged')
 
 
-set encoding=utf-8
+" set encoding=utf-8
 set backspace=indent,eol,start
 set cursorline
 
@@ -45,15 +45,55 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'Bling/vim-airline'
 
+Plug 'mhinz/vim-startify'
+
 Plug 'jonathanfilip/vim-lucius'
 
+Plug 'nanotech/jellybeans.vim'
+
+Plug 'yegappan/mru'
+
+Plug 'majutsushi/tagbar'
+
+Plug 'scrooloose/nerdcommenter'
+
+Plug 'nathanaelkane/vim-indent-guides'
+
+Plug 'marijnh/tern_for_vim'
+
+Plug 'Shougo/neocomplete.vim'
+
+Plug 'Valloric/YouCompleteMe'
+
+Plug 'airblade/vim-gitgutter'
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'mkusher/padawan.vim' 
+let $PATH=$PATH . ':' . expand('~/.composer/vendor/bin')
+let g:padawan#composer_command = "php ~/composer.phar"
+
+let g:ycm_semantic_triggers = {}
+let g:ycm_semantic_triggers.php =
+\ ['->', '::', '(', 'use ', 'namespace ', '\']
+
+Plug 'SirVer/ultisnips'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 " hotkeys
 map <C-n> :NERDTreeToggle<CR>
+map <C-e> :MRU<CR>
 
 set clipboard=unnamedplus
 
 syntax on
-colorscheme lucius
+colorscheme jellybeans
 
 set number
 
