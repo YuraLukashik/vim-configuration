@@ -87,7 +87,12 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 " hotkeys
+let mapleader=","
+inoremap jk <esc>
+inoremap <esc> <nop>
 map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFind<CR>
+map <C-e> :CtrlPMRUFiles<CR>
 map <C-e> :MRU<CR>
 
 set clipboard=unnamedplus
